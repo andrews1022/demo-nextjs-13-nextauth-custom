@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { options } from "../api/auth/[...nextauth]/options";
 
-import SignInForm from "@/components/SignInForm";
+import SignInButton from "@/components/SignInButton";
 
 const SignInPage = async () => {
   const session = await getServerSession(options);
@@ -14,7 +14,7 @@ const SignInPage = async () => {
       <div>
         <h1>SignInPage</h1>
 
-        <SignInForm />
+        <SignInButton />
       </div>
     );
   }

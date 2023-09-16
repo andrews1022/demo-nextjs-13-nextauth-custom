@@ -23,7 +23,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
+
+        <main className="p-4">{children}</main>
       </body>
     </html>
   );

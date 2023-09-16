@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { options } from "../api/auth/[...nextauth]/options";
 
-import SignOutForm from "@/components/SignOutForm";
+import SignOutButton from "@/components/SignOutButton";
 
 const SignOutPage = async () => {
   const session = await getServerSession(options);
@@ -14,7 +14,7 @@ const SignOutPage = async () => {
       <div>
         <h1>SignOutPage</h1>
 
-        <SignOutForm />
+        <SignOutButton />
       </div>
     );
   }

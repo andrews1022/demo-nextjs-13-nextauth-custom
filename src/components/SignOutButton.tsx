@@ -2,10 +2,10 @@
 
 import { signOut } from "next-auth/react";
 
-const SignOutForm = () => {
+const SignOutButton = () => {
   return (
     <button
-      className="bg-slate-600 text-white"
+      className="bg-slate-600 px-4 py-2 text-white"
       onClick={() => signOut({ callbackUrl: "/" })}
       type="button"
     >
@@ -14,4 +14,4 @@ const SignOutForm = () => {
   );
 };
 
-export default SignOutForm;
+export default SignOutButton;
