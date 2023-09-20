@@ -14,4 +14,4 @@ const SignInButton = () => {
   );
 };
 
-export default SignInButton;
+export { SignInButton };

@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -22,6 +22,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* @ts-expect-error Server Component */}
         <Navbar />
 
         <main className="p-4">{children}</main>
